@@ -1,0 +1,214 @@
+
+
+.sidebar {
+	.widget {
+		padding: 10px 0;
+		margin-bottom: 20px;
+		font-size: 15px;
+
+		.widget-title {
+			position: relative;
+			padding: 10px 30px 10px 10px;
+			background-color: $navy;
+
+			h4 {
+				@include font;
+				color: white;
+				border-bottom: 4px solid white;
+				text-transform: uppercase;
+				font-size: 1.1em;
+				padding-right: 15px;
+			}
+
+			&:before {
+				content: '';
+				position: absolute;
+				width: 44px;
+				height: 44px;
+				margin-top: -22px;
+				right: 5px;
+				top: 50%;
+				background: center center no-repeat;
+				background-size: contain;
+			}
+		}
+
+		&.widget_nav_menu {
+			.widget-title:before {
+				background-image: url(../img/icon-pointer.png);
+			}
+
+			ul {
+				li {
+					a {
+						display: block;
+						padding: 5px 10px 3px;
+						border-bottom: 1px solid lighten( $grey, 20% );
+						text-transform: uppercase;
+						transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+						color: $grey-dark;
+						font-size: .9em;
+						text-decoration: none;
+						position: relative;
+	
+						&:hover {
+							background-color: $grey;
+							color: white;
+						}
+					}
+
+					&.menu-item-has-children {
+						& > ul {
+							display: none;
+						}
+
+					 	& > a:before {
+							content: "";
+							position: absolute;
+							right: 0;
+							top: 50%;
+							margin-top: -10px;
+							height: 20px;
+							width: 20px;
+							background: url(../img/icon-arrow-down-small.png) center center no-repeat;
+							background-size: contain;
+							transition: transform 500ms ease-in-out;
+						}
+					}
+
+					&.menu-item-has-children.open {
+						& > ul {
+							display: block;
+						}
+
+						& > a:before {
+							transform: rotate( 180deg );
+						}
+					}
+
+					ul {
+						li {
+							a {
+								padding: 5px 10px 3px 25px;
+							}
+
+							ul {
+								li {
+									a {
+										padding: 5px 10px 3px 40px;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		&.widget_lscu_connect_widget {
+			.widget-title:before {
+				background-image: url(../img/icon-connect.png);
+			}
+
+			.contact {
+				clear: left;
+				padding: 10px 0;
+
+				img {
+					width: 25%;
+					float: left;
+					margin: 5px 15px 10px;
+					border: 1px solid $grey;
+				}
+			}
+		}
+
+		&.widget_text {
+			.widget-title:before {
+				background-image: url(../img/icon-text-widget.png);
+				margin-top: -24px;
+			}
+			.textwidget {
+				padding: 15px;
+			}
+		}
+
+		&.tribe-events-list-widget {
+			.widget-title:before {
+				background-image: url(../img/icon-events-small.png);
+			}
+
+			ol {
+				padding: 10px;
+				li {
+					padding: 10px 0;
+					margin-bottom: 0;
+
+					h4 {
+						font-size: 1.2em;
+					}
+				}
+			}
+
+			p.tribe-events-widget-link {
+				text-align: center;
+				padding: 10px;
+			}
+		}
+
+		&.leverage {
+			.widget-title {
+				background-color: $navy;
+
+				h4 {
+					@include font-italic;
+				}
+
+				&:before {
+					background-image: url(../img/icon-leverage.png);
+				}
+			}
+		}
+
+		&.cat-post-widget {
+			.widget-title:before {
+				background-image: url(../img/icon-connect.png);
+			}
+
+			ul {
+				padding: 10px;
+			}
+		}
+	}
+
+}
+
+
+.twitter-aggregator-tweet {
+	padding: 5px 5px 15px;
+
+	.twitter-aggregator-tweet-profile-pic {
+		display: none;
+	}
+
+	.twitter-aggregator-tweet-profile-name {
+		@include font-bold;
+		float: left;
+		color: darken( $grey, 10% );
+		padding: 4px 0;
+		line-height: 25px;
+	}
+
+	.twitter-aggregator-tweet-time {
+		float: right;
+		font-size: .8em;
+		line-height: 25px;
+		color: lighten( $grey, 10% );
+		padding: 4px 0;
+	}
+
+	.twitter-aggregator-tweet-text {
+		clear: both;
+		font-size: .9em;
+	}
+}

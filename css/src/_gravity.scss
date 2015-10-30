@@ -1,0 +1,10 @@
+
+
+.gform_confirmation_message {
+	background: lighten( $forest, 65% );
+	border: 3px solid $forest;
+	color: $forest;
+	@include font-bold;
+	padding: 5px 8px;
+}
+
