@@ -6,22 +6,26 @@
 get_header();
 
 ?>
-	<div id="primary" class="site-content">
+	<nav role="navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
+	</nav>
 
-		<div id="content" class="site-content content-narrow" role="main">
-		<?php 
-		if ( have_posts() ) :
-			while ( have_posts() ) : the_post(); 
-				?>
-				<h1><?php the_title(); ?></h1>
-				<?php
-				the_content();
-			endwhile;
-		endif;
-		 ?>
-		</div><!-- #content -->
+	<div class="main-content">
+		<div class="wrap group">
 
-	</div><!-- #primary -->
+			<?php 
+			if ( have_posts() ) :
+				while ( have_posts() ) : the_post(); 
+					?>
+					<h1><?php the_title(); ?></h1>
+					<?php
+					the_content();
+				endwhile;
+			endif;
+			 ?>
+
+		</div>
+	</div>
 <?php
 
 get_footer();

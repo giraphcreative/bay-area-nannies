@@ -10,32 +10,16 @@ include( "library/menus.php" );
 include( "library/scripts.php" );
 
 
-// post types
-include( "library/post-type/partner.php" );
-
-
 // an extra image manipulation function
 include( "library/images.php" );
 
 
-// include our metaboxes library
-include( "library/metabox.php" );
-include( "library/metabox-theme.php" );
-
-
-// include widget library
-include( "library/widgets.php" );
-include( "library/login.php" );
-
-
-// include quote metaboxes/functions
-include( "library/title.php" );
+// include showcase functions
 include( "library/showcase.php" );
-include( "library/accordion.php" );
 
 
-// widgets
-include( "library/twitter-aggregator/widget.php" );
+// include metabox
+include( "library/metabox.php" );
 
 
 

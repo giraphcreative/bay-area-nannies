@@ -7,24 +7,14 @@ if ( empty( $color ) ) $color = 'forest';
 
 ?>
 
-	<?php the_large_title(); ?>
-
 	<?php the_showcase(); ?>
 
-	<?php the_thumb_showcase(); ?>
+	<nav role="navigation">
+		<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
+	</nav>
 
-	<div id="content" class="wrap group content-two-column <?php print $color ?>" role="main">
-		<div class="quarter sidebar">
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-generic') ) : ?><!-- no sidebar --><?php endif; ?>
-		</div>
-		<div class="three-quarter">
-			<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
-			    <?php 
-			    if ( function_exists( 'bcn_display' ) ) {
-			        bcn_display();
-			    }
-			    ?>
-			</div>
+	<div class="main-content">
+		<div class="wrap group" role="main">
 			<?php 
 			// do post loop
 			if ( have_posts() ) :
@@ -36,7 +26,7 @@ if ( empty( $color ) ) $color = 'forest';
 			the_accordion();
 			?>
 		</div>
-	</div><!-- #content -->
+	</div>
 <?php
 
 get_footer();

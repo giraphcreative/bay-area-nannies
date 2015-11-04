@@ -1,44 +1,19 @@
 
 
-body {
-	background: url(../img/bg-body.jpg) center center;
-}
-
 .wrap {
-	max-width: 1220px;
+	max-width: 1150px;
 	margin: 0 auto;
 }
 
-.content-narrow {
-	padding: 40px 20px;
-	max-width: 900px;
-	margin: 0 auto;
-}
-
-.content-wide {
-	padding: 40px 20px;
-}
-
-.content-two-column {
-	@include respond-to( 768px ) {
-		padding: 30px 0;
-	}
-}
-
-.fluid-width-video-wrapper {
-	margin: 15px 0;
-}
-
-.half, .two-third, .three-quarter {
-	@extend .content-style;
+.main-content {
+	min-height: 400px;
+	padding: 30px;
+	background: $lime-light url(../img/bg-grunge.png) center center;
+	background-size: contain;
 }
 
 .quarter, .third, .half, .two-third, .three-quarter {
 	padding: 20px;
-}
-
-.breadcrumbs {
-	padding: 0 0 20px;
 }
 
 @include respond-to( 768px ) {
