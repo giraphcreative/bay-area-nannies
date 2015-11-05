@@ -12,6 +12,12 @@
 	background-size: contain;
 }
 
+.content-narrow {
+	max-width: 800px;
+	margin: 0 auto;
+	@extend .content-style;
+}
+
 .quarter, .third, .half, .two-third, .three-quarter {
 	padding: 20px;
 }

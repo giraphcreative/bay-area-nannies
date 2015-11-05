@@ -72,17 +72,19 @@ body {
   color: #47494b; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Slab Thing", sans-serif;
+  font-weight: normal;
   font-weight: bold;
   line-height: 1.2em; }
 
 h1 {
-  font-size: 2.5em; }
+  font-size: 2.4em; }
 
 h2 {
-  font-size: 2.1em; }
+  font-size: 2em; }
 
 h3 {
-  font-size: 1.9em; }
+  font-size: 1.8em; }
 
 h4 {
   font-size: 1.6em; }
@@ -107,7 +109,7 @@ strong em, em strong, h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
   font-style: italic; }
 
 a {
-  color: #2C5871;
+  color: #056FB8;
   text-decoration: none;
   transition: opacity 400ms ease-in-out; }
   a:hover {
@@ -117,23 +119,30 @@ input, textarea {
   font-family: "Open Sans", sans-serif;
   font-weight: normal; }
 
-.content-style ol, .accordion .accordion-box .accordion-box-content ol, .content-style ul, .accordion .accordion-box .accordion-box-content ul {
+hr {
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid #83BF41;
+  margin: 25px 0;
+  clear: both; }
+
+.content-style ol, .content-narrow ol, .content-style ul, .content-narrow ul {
   padding: 5px 0 5px 35px; }
-  .content-style ol li, .accordion .accordion-box .accordion-box-content ol li, .content-style ul li, .accordion .accordion-box .accordion-box-content ul li {
+  .content-style ol li, .content-narrow ol li, .content-style ul li, .content-narrow ul li {
     padding: 3px 0; }
-  .content-style ol.gform_fields, .accordion .accordion-box .accordion-box-content ol.gform_fields, .content-style ul.gform_fields, .accordion .accordion-box .accordion-box-content ul.gform_fields {
+  .content-style ol.gform_fields, .content-narrow ol.gform_fields, .content-style ul.gform_fields, .content-narrow ul.gform_fields {
     padding: 5px 0; }
 
-.content-style ul, .accordion .accordion-box .accordion-box-content ul {
+.content-style ul, .content-narrow ul {
   list-style-type: disc; }
 
-.content-style ol, .accordion .accordion-box .accordion-box-content ol {
+.content-style ol, .content-narrow ol {
   list-style-type: decimal; }
 
-.content-style h1, .accordion .accordion-box .accordion-box-content h1, .content-style h2, .accordion .accordion-box .accordion-box-content h2, .content-style h3, .accordion .accordion-box .accordion-box-content h3, .content-style h4, .accordion .accordion-box .accordion-box-content h4, .content-style h5, .accordion .accordion-box .accordion-box-content h5, .content-style h6, .accordion .accordion-box .accordion-box-content h6 {
+.content-style h1, .content-narrow h1, .content-style h2, .content-narrow h2, .content-style h3, .content-narrow h3, .content-style h4, .content-narrow h4, .content-style h5, .content-narrow h5, .content-style h6, .content-narrow h6 {
   padding: 10px 0 5px; }
 
-.content-style blockquote, .accordion .accordion-box .accordion-box-content blockquote {
+.content-style blockquote, .content-narrow blockquote {
   padding: 10px 25px;
   font-style: italic;
   font-size: 1.2em;
@@ -142,15 +151,9 @@ input, textarea {
   border-left: 3px solid #d4d5d6;
   margin: 10px 0 10px 20px; }
 
-.content-style hr, .accordion .accordion-box .accordion-box-content hr {
-  border: 0;
-  border-bottom: 1px solid #d4d5d6;
-  padding: 0;
-  margin: 25px 0; }
-
-.content-style button, .accordion .accordion-box .accordion-box-content button, .content-style input[type=submit], .accordion .accordion-box .accordion-box-content input[type=submit], .content-style input[type=reset], .accordion .accordion-box .accordion-box-content input[type=reset] {
+.content-style button, .content-narrow button, .content-style input[type=submit], .content-narrow input[type=submit], .content-style input[type=reset], .content-narrow input[type=reset] {
   padding: 9px 45px 6px 12px;
-  background: #007940 url(../img/icon-button-arrow.png) right center no-repeat;
+  background: #056FB8 url(../img/icon-button-arrow.png) right center no-repeat;
   color: white;
   font-weight: bold;
   border: 3px solid white;
@@ -158,25 +161,7 @@ input, textarea {
   border-radius: 10px; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #2C5871; }
-  .teal h1, .teal h2, .teal h3, .teal h4, .teal h5, .teal h6 {
-    color: #15B0BF; }
-  .forest h1, .forest h2, .forest h3, .forest h4, .forest h5, .forest h6 {
-    color: #007940; }
-  .green h1, .green h2, .green h3, .green h4, .green h5, .green h6 {
-    color: #017A40; }
-  .orange h1, .orange h2, .orange h3, .orange h4, .orange h5, .orange h6 {
-    color: #F99B1F; }
-  .grey h1, .grey-light h1, .grey h2, .grey-light h2, .grey h3, .grey-light h3, .grey h4, .grey-light h4, .grey h5, .grey-light h5, .grey h6, .grey-light h6 {
-    color: #939598; }
-  .lime h1, .lime h2, .lime h3, .lime h4, .lime h5, .lime h6 {
-    color: #83BF41; }
-  .navy h1, .navy h2, .navy h3, .navy h4, .navy h5, .navy h6 {
-    color: #2C5871; }
-  .red h1, .red h2, .red h3, .red h4, .red h5, .red h6 {
-    color: #e22627; }
-  .yellow h1, .yellow h2, .yellow h3, .yellow h4, .yellow h5, .yellow h6 {
-    color: #D3D627; }
+  color: #056FB8; }
 
 header {
   position: relative;
@@ -364,6 +349,10 @@ nav {
   background: #D1E3BE url(../img/bg-grunge.png) center center;
   background-size: contain; }
 
+.content-narrow {
+  max-width: 800px;
+  margin: 0 auto; }
+
 .quarter, .third, .half, .two-third, .three-quarter {
   padding: 20px; }
 
@@ -395,74 +384,10 @@ img.aligncenter {
   display: block;
   margin: 0 auto; }
 
-.accordions-wide {
-  padding: 0 20px; }
-
-.accordion {
-  padding: 30px 0 6px; }
-  .accordion .accordion-box .accordion-box-title {
-    position: relative;
-    background-size: cover;
-    cursor: pointer;
-    padding: 10px 40px 15px 15px; }
-    @media only screen and (min-width: 768px) {
-      .accordion .accordion-box .accordion-box-title {
-        padding: 15px 60px 25px 15px; } }
-    .accordion .accordion-box .accordion-box-title h4 {
-      font-size: 18px;
-      line-height: 22px;
-      font-style: normal;
-      color: white;
-      text-transform: uppercase;
-      padding: 10px 10px 5px;
-      border-bottom: 4px solid white; }
-      .accordion .accordion-box .accordion-box-title h4:before {
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
-        width: 40px;
-        height: 40px;
-        content: '';
-        background: url(../img/icon-accordion-arrow.png) center center no-repeat;
-        background-size: contain;
-        transition: transform 600ms ease-in-out; }
-        @media only screen and (min-width: 768px) {
-          .accordion .accordion-box .accordion-box-title h4:before {
-            width: 60px;
-            height: 60px;
-            bottom: 10px; } }
-    .accordion .accordion-box .accordion-box-title.open h4:before {
-      transform: rotate(180deg); }
-  .accordion .accordion-box .accordion-box-content {
-    display: none;
-    padding: 20px; }
-    .accordion .accordion-box .accordion-box-content .wrap {
-      max-width: 1180px; }
-  .accordion .accordion-box.open .accordion-box-content {
-    display: block; }
-  .accordion .accordion-box {
-    margin-top: 6px; }
-    .accordion .accordion-box.bg-teal .accordion-box-content, .accordion .accordion-box.bg-teal-light .accordion-box-content, .accordion .accordion-box.bg-teal-lighter .accordion-box-content, .accordion .accordion-box.bg-teal-lightest .accordion-box-content {
-      background-color: #effcfd; }
-    .accordion .accordion-box.bg-navy .accordion-box-content, .accordion .accordion-box.bg-navy-light .accordion-box-content {
-      background-color: #f0f6f9; }
-    .accordion .accordion-box.bg-red .accordion-box-content, .accordion .accordion-box.bg-red-light .accordion-box-content {
-      background-color: white; }
-    .accordion .accordion-box.bg-lime .accordion-box-content, .accordion .accordion-box.bg-lime-light .accordion-box-content {
-      background-color: white; }
-    .accordion .accordion-box.bg-forest .accordion-box-content, .accordion .accordion-box.bg-forest-light .accordion-box-content {
-      background-color: #dffff0; }
-    .accordion .accordion-box.bg-orange .accordion-box-content, .accordion .accordion-box.bg-orange-light .accordion-box-content {
-      background-color: #fddeb4; }
-    .accordion .accordion-box.bg-yellow .accordion-box-content, .accordion .accordion-box.bg-yellow-light .accordion-box-content {
-      background-color: #f6f7d2; }
-    .accordion .accordion-box.bg-grey-light .accordion-box-content, .accordion .accordion-box.bg-grey-dark .accordion-box-content, .accordion .accordion-box.bg-grey-light-light .accordion-box-content, .accordion .accordion-box.bg-grey-dark-light .accordion-box-content {
-      background-color: #e1e2e3; }
-
 .gform_confirmation_message {
-  background: #c5ffe4;
-  border: 3px solid #007940;
-  color: #007940;
+  background: white;
+  border: 3px solid #056FB8;
+  color: #056FB8;
   font-weight: bold;
   padding: 5px 8px; }
 

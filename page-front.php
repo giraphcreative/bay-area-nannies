@@ -15,7 +15,7 @@ get_header();
 	</nav>
 
 	<div class="main-content">
-		<div class="wrap group">
+		<div class="content-style wrap group">
 
 			<?php 
 			if ( have_posts() ) :
@@ -44,7 +44,6 @@ get_header();
 				</ul>
 			</div>
 		</div>
-		
 	</div>
 
 <?php 

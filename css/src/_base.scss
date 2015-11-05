@@ -9,20 +9,21 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+	@include font-slab;
 	font-weight: bold;
 	line-height: 1.2em;
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 2.4em;
 }
 
 h2 {
-	font-size: 2.1em;
+	font-size: 2em;
 }
 
 h3 {
-	font-size: 1.9em;
+	font-size: 1.8em;
 }
 
 h4 {
@@ -55,7 +56,7 @@ strong em, em strong, h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
 }
 
 a {
-	color: $navy;
+	color: $blue;
 	text-decoration: none;
 	transition: opacity 400ms ease-in-out;
 
@@ -66,6 +67,14 @@ a {
 
 input, textarea {
 	@include font;
+}
+
+hr {
+	height: 0;
+	border: 0;
+	border-bottom: 1px solid $lime;
+	margin: 25px 0;
+	clear: both;
 }
 
 
@@ -104,16 +113,9 @@ input, textarea {
 		margin: 10px 0 10px 20px;
 	}
 
-	hr {
-		border: 0;
-		border-bottom: 1px solid lighten( $grey, 25% );
-		padding: 0;
-		margin: 25px 0;
-	}
-
 	button, input[type=submit], input[type=reset] {
 		padding: 9px 45px 6px 12px;
-		background: $forest url(../img/icon-button-arrow.png) right center no-repeat;
+		background: $blue url(../img/icon-button-arrow.png) right center no-repeat;
 		color: white;
 		font-weight: bold;
 		border: 3px solid white;
@@ -124,17 +126,7 @@ input, textarea {
 
 
 h1, h2, h3, h4, h5, h6 {
-	color: $navy;
-
-	.teal & { color: $teal; }
-	.forest & { color: $forest; }
-	.green & { color: $green; }
-	.orange & { color: $orange; }
-	.grey &, .grey-light & { color: $grey; }
-	.lime & { color: $lime; }
-	.navy & { color: $navy; }
-	.red & { color: $red; }
-	.yellow & { color: $yellow; }
+	color: $blue;
 }
 
 

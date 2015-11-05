@@ -14,7 +14,7 @@ if ( empty( $color ) ) $color = 'forest';
 	</nav>
 
 	<div class="main-content">
-		<div class="wrap group" role="main">
+		<div class="content-narrow group" role="main">
 			<?php 
 			// do post loop
 			if ( have_posts() ) :
@@ -23,7 +23,6 @@ if ( empty( $color ) ) $color = 'forest';
 				endwhile;
 			endif;
 			
-			the_accordion();
 			?>
 		</div>
 	</div>
