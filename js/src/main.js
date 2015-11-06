@@ -62,7 +62,7 @@ jQuery(document).ready(function($){
 
 
 	// fluid width videos that maintain aspect ratio
-	$( '.content' ).fitVids();
+	$( '.main-content, .content-style' ).fitVids();
 	
 
 	// sidebar title background colors.
@@ -90,9 +90,5 @@ jQuery(document).ready(function($){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
 	
-	
-	// creep on links
-	$(".wrap a").creep();
-
 });
 
