@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
 	var menu = $( 'header nav' ),
 		menu_toggle = menu.find( 'button.menu-toggle' ),
 		menu_ul = menu.find( '.nav-menu' ),
-		fluid_images = $( '.content-area img, .site-content img' ),
+		fluid_images = $( '.main-content img, .content-style img' ),
 		sidebar = $( '.sidebar' ),
 		large_title = $( '.large-title' ),
 		left_menu = $( '.sidebar .menu' ),
