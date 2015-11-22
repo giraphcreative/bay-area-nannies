@@ -11,7 +11,7 @@ get_header();
 	</nav>
 
 	<div class="main-content">
-		<div class="wrap group">
+		<div class="content-narrow group" role="main">
 
 			<?php 
 			if ( have_posts() ) :
