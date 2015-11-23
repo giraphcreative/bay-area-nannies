@@ -201,10 +201,10 @@ header {
         position: absolute;
         right: 0;
         bottom: 5px;
-        max-width: 33%; }
+        width: 33%; }
         header .social img {
           float: right;
-          max-width: 16.6%; } }
+          max-width: 40%; } }
 
 nav {
   background: #83BF41 url(../img/bg-grunge.png) center center no-repeat;
