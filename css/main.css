@@ -414,6 +414,8 @@ img.aligncenter {
   .people .person {
     width: 33.33%;
     clear: none; }
+    .people .person:nth-child(3), .people .person:nth-child(5), .people .person:nth-child(7), .people .person:nth-child(9), .people .person:nth-child(11), .people .person:nth-child(13), .people .person:nth-child(15) {
+      clear: none; }
     .people .person:nth-child(4), .people .person:nth-child(7), .people .person:nth-child(10), .people .person:nth-child(13), .people .person:nth-child(16) {
       clear: left; } }
 
@@ -421,6 +423,8 @@ img.aligncenter {
   .people .person {
     width: 25%;
     clear: none; }
+    .people .person:nth-child(4), .people .person:nth-child(7), .people .person:nth-child(10), .people .person:nth-child(13), .people .person:nth-child(16) {
+      clear: none; }
     .people .person:nth-child(5), .people .person:nth-child(9), .people .person:nth-child(13), .people .person:nth-child(17) {
       clear: left; } }
 
