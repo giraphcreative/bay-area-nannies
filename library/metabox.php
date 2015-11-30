@@ -15,7 +15,7 @@ function page_metaboxes( $meta_boxes ) {
     $showcase_metabox = new_cmb2_box( array(
         'id' => 'showcase_metabox',
         'title' => 'Showcase',
-        'object_types' => array( 'page', 'partner', 'event' ), // post type
+        'object_types' => array( 'page' ), // post type
         'context' => 'normal',
         'priority' => 'high',
     ) );
@@ -50,6 +50,52 @@ function page_metaboxes( $meta_boxes ) {
         'preview_size' => array( 200, 80 )
     ) );
 
+
+
+    // showcase metabox
+    $people_metabox = new_cmb2_box( array(
+        'id' => 'people_metabox',
+        'title' => 'People',
+        'object_types' => array( 'page' ), // post type
+        'context' => 'normal',
+        'priority' => 'high',
+    ) );
+
+    $people_metabox_group = $people_metabox->add_field( array(
+        'id' => CMB_PREFIX . 'people',
+        'type' => 'group',
+        'options' => array(
+            'add_button' => __('Add Person', 'cmb2'),
+            'remove_button' => __('Remove Person', 'cmb2'),
+            'group_title'   => __( 'Person {#}', 'cmb' ), // since version 1.1.4, {#} gets replaced by row number
+            'sortable' => true, // beta
+        )
+    ) );
+
+    $people_metabox->add_group_field( $people_metabox_group, array(
+        'name' => 'Photo',
+        'id'   => 'photo',
+        'type' => 'file',
+        'preview_size' => array( 200, 200 )
+    ) );
+
+    $people_metabox->add_group_field( $people_metabox_group, array(
+        'name' => 'Name',
+        'id'   => 'name',
+        'type' => 'text',
+    ) );
+
+    $people_metabox->add_group_field( $people_metabox_group, array(
+        'name' => 'Title',
+        'id'   => 'title',
+        'type' => 'text',
+    ) );
+
+    $people_metabox->add_group_field( $people_metabox_group, array(
+        'name' => 'Description',
+        'id'   => 'description',
+        'type' => 'wysiwyg',
+    ) );
 
 }
 add_filter( 'cmb2_init', 'page_metaboxes' );

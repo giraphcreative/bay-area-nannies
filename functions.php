@@ -18,6 +18,10 @@ include( "library/images.php" );
 include( "library/showcase.php" );
 
 
+// include people functions
+include( "library/people.php" );
+
+
 // include metabox
 include( "library/metabox.php" );
 

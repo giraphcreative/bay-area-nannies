@@ -16,8 +16,13 @@
 }
 
 @mixin font {
-	font-family: "Open Sans", sans-serif;
-	font-weight: normal;
+    font-family: "Open Sans", sans-serif;
+    font-weight: normal;
+}
+
+@mixin font-bold {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
 
 @mixin font-slab {

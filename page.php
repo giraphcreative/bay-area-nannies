@@ -23,6 +23,9 @@ if ( empty( $color ) ) $color = 'forest';
 				endwhile;
 			endif;
 			
+			// output the people
+			the_people();
+
 			?>
 		</div>
 	</div>
