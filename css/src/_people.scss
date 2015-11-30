@@ -4,6 +4,7 @@
 	.person {
 		img {
 			border-radius: 50%;
+			width: 100%;
 		}
 
 		h3, h4 {
@@ -35,19 +36,6 @@
 			}
 
 			&:nth-child(4), &:nth-child(7), &:nth-child(10), &:nth-child(13), &:nth-child(16) {
-				clear: left;
-			}
-		}
-
-		@include respond-to( 900px ) {
-			width: 25%;
-			clear: none;
-
-			&:nth-child(4), &:nth-child(7), &:nth-child(10), &:nth-child(13), &:nth-child(16) {
-				clear: none;
-			}
-
-			&:nth-child(5), &:nth-child(9), &:nth-child(13), &:nth-child(17) {
 				clear: left;
 			}
 		}
