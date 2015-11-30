@@ -391,7 +391,7 @@ img.aligncenter {
   margin: 0 auto; }
 
 .people .person {
-  padding: 5px; }
+  padding: 10px; }
   .people .person img {
     border-radius: 50%;
     width: 100%; }
@@ -405,6 +405,7 @@ img.aligncenter {
     padding: 0 0 10px; }
   @media only screen and (min-width: 480px) {
     .people .person {
+      padding: 15px;
       width: 50%;
       float: left; }
       .people .person:nth-child(3), .people .person:nth-child(5), .people .person:nth-child(7), .people .person:nth-child(9), .people .person:nth-child(11), .people .person:nth-child(13), .people .person:nth-child(15) {

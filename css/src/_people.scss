@@ -2,8 +2,8 @@
 
 .people {
 	.person {
-		padding: 5px;
-		
+		padding: 10px;
+
 		img {
 			border-radius: 50%;
 			width: 100%;
@@ -21,6 +21,7 @@
 		}
 
 		@include respond-to( 480px ) {
+			padding: 15px;
 			width: 50%;
 			float: left;
 
