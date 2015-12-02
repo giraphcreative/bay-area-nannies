@@ -41,54 +41,9 @@ jQuery(document).ready(function($){
 	});
 
 
-	// left menu toggling.
-	left_menu.find( 'li.menu-item-has-children > a' ).click(function( event ){
-		var menu_item = $( this ).parent( 'li' );
-		event.preventDefault();
-		if ( !menu_item.hasClass( 'open' ) ) {
-			event.preventDefault();
-			menu_item.addClass( 'open' );
-		} else {
-			location.href = $( this ).attr( 'href' );
-		}
-	});
-
-
-	// accordion
-	$( '.accordion-box-title' ).click(function(){
-		$( this ).parent( '.accordion-box' ).children( '.accordion-box-content' ).slideToggle( 600 );
-		$( this ).toggleClass( 'open' );
-	});
-
-
 	// fluid width videos that maintain aspect ratio
 	$( '.main-content, .content-style' ).fitVids();
 	
-
-	// sidebar title background colors.
-	if ( sidebar && large_title ) {
-		sidebar.find( '.widget:not(.leverage) .widget-title' ).css( 'background-color', large_title.css( 'background-color' ) );
-	}
-
-
-	// search and replace leverage so it's italicized.
-	$(".content label, .tribe-events-event-categories, .breadcrumbs, .search-results article").each(function(){
-		$(this).html( $(this).html().replace(/LEVERAGE/g,'<em>LEVERAGE</em>') );
-	});
-
-
-	// remove annoying non-breaking spaces from twitter widget
-	if ( twitter_widget ) {
-		twitter_widget.find('.tweet-time').each(function(){
-			$(this).html( $(this).html().replace("&nbsp;-&nbsp;",'') );
-		});
-	}
-
-
-	// button links (using the data-url attribute)
-	$( 'button[data-url]' ).click(function(){
-		window.location.href = $( this ).attr( 'data-url' );
-	});
 	
 });
 
