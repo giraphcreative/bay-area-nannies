@@ -102,14 +102,6 @@ nav {
 
 		ul {
 			display: none;
-			text-align: left;
-			width: 200px;
-
-			@include respond-to( 768px ) {
-				position: absolute;
-				top: 53px;
-				left: 0;
-			}
 
 			li {
 				display: block;
@@ -118,13 +110,27 @@ nav {
 					font-size: 15px;
 					line-height: 15px;
 					padding: 10px 15px 5px;
-					background: lighten( $lime, 5% );
+				}
+			}
 
-					&:hover {
-						background: lighten( $lime, 10% );
+			@include respond-to( 768px ) {
+				position: absolute;
+				top: 53px;
+				left: 0;
+				text-align: left;
+				width: 200px;
+
+				li {
+					a {
+						background: lighten( $lime, 5% );
+
+						&:hover {
+							background: lighten( $lime, 10% );
+						}
 					}
 				}
 			}
+
 		}
 
 		&:hover ul {

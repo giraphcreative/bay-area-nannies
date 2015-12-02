@@ -247,23 +247,24 @@ nav {
       nav li a:hover {
         text-decoration: none; }
     nav li ul {
-      display: none;
-      text-align: left;
-      width: 200px; }
-      @media only screen and (min-width: 768px) {
-        nav li ul {
-          position: absolute;
-          top: 53px;
-          left: 0; } }
+      display: none; }
       nav li ul li {
         display: block; }
         nav li ul li a {
           font-size: 15px;
           line-height: 15px;
-          padding: 10px 15px 5px;
-          background: #8fc554; }
-          nav li ul li a:hover {
-            background: #9ccc67; }
+          padding: 10px 15px 5px; }
+      @media only screen and (min-width: 768px) {
+        nav li ul {
+          position: absolute;
+          top: 53px;
+          left: 0;
+          text-align: left;
+          width: 200px; }
+          nav li ul li a {
+            background: #8fc554; }
+            nav li ul li a:hover {
+              background: #9ccc67; } }
     nav li:hover ul {
       display: block; }
 
