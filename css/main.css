@@ -441,6 +441,32 @@ img.aligncenter {
       .people .person:nth-child(4), .people .person:nth-child(7), .people .person:nth-child(10), .people .person:nth-child(13), .people .person:nth-child(16) {
         clear: left; } }
 
+.testimonials {
+  zoom: 1; }
+  .testimonials:before, .testimonials:after {
+    content: "";
+    display: table; }
+  .testimonials, .testimonials:before, .testimonials:after {
+    clear: both; }
+  @media only screen and (min-width: 500px) {
+    .testimonials .testimonials-column {
+      float: left;
+      width: 48%;
+      margin: 0 1%; } }
+  @media only screen and (min-width: 768px) {
+    .testimonials .testimonials-column {
+      width: 31%; } }
+  .testimonials .testimonial .testimonial-content {
+    background: #e1e2e3;
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px #c7c8ca, -2px -2px 5px #c7c8ca inset;
+    border: 1px solid #adafb1; }
+  .testimonials .testimonial .testimonial-by {
+    font-style: italic;
+    text-align: right; }
+
 .gform_confirmation_message {
   background: white;
   border: 3px solid #056FB8;

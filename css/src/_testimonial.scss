@@ -1,0 +1,36 @@
+
+
+.testimonials {
+	@include clearfix;
+
+	.testimonials-column {
+		@include respond-to( 500px ) {
+			float: left;
+			width: 48%;
+			margin: 0 1%;
+		}
+
+		@include respond-to( 768px ) {
+			width: 31%;
+		}
+	}
+
+	.testimonial {
+
+		.testimonial-content {
+			background: lighten( $grey, 30% );
+			border-radius: 8px;
+			padding: 5px 15px;
+			margin-bottom: 20px;
+			box-shadow: 2px 2px 10px lighten( $grey, 20% ),  -2px -2px 5px lighten( $grey, 20% ) inset;
+			border: 1px solid lighten( $grey, 10% );
+		}
+
+		.testimonial-by {
+			font-style: italic;
+			text-align: right;
+		}
+
+	}
+}
+

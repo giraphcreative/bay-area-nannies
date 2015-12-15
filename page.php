@@ -29,6 +29,9 @@ if ( empty( $color ) ) $color = 'forest';
 			// output the people
 			the_people();
 
+			// output the testimonials if they're present
+			the_testimonials()
+
 			?>
 		</div>
 	</div>

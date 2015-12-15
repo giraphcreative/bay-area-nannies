@@ -97,6 +97,47 @@ function page_metaboxes( $meta_boxes ) {
         'type' => 'wysiwyg',
     ) );
 
+
+
+    // testimonial metabox
+    $testimonial_metabox = new_cmb2_box( array(
+        'id' => 'testimonial_metabox',
+        'title' => 'Showcase',
+        'object_types' => array( 'page' ), // post type
+        'context' => 'normal',
+        'priority' => 'high',
+    ) );
+
+    $testimonial_metabox_group = $testimonial_metabox->add_field( array(
+        'id' => CMB_PREFIX . 'testimonial',
+        'type' => 'group',
+        'options' => array(
+            'add_button' => __('Add Testimonial', 'cmb2'),
+            'remove_button' => __('Remove Testimonial', 'cmb2'),
+            'group_title'   => __( 'Testimonial {#}', 'cmb' ), // since version 1.1.4, {#} gets replaced by row number
+            'sortable' => true, // beta
+        )
+    ) );
+
+    $testimonial_metabox->add_group_field( $testimonial_metabox_group, array(
+        'name' => 'Testimonial',
+        'id'   => 'testimonial',
+        'type' => 'textarea_small',
+    ) );
+
+    $testimonial_metabox->add_group_field( $testimonial_metabox_group, array(
+        'name' => 'By Line',
+        'id'   => 'by',
+        'type' => 'text',
+    ) );
+
+    $testimonial_metabox->add_group_field( $testimonial_metabox_group, array(
+        'name' => 'Image',
+        'id'   => 'image',
+        'type' => 'file',
+        'preview_size' => array( 200, 100 )
+    ) );
+
 }
 add_filter( 'cmb2_init', 'page_metaboxes' );
 

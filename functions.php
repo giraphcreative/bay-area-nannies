@@ -22,6 +22,10 @@ include( "library/showcase.php" );
 include( "library/people.php" );
 
 
+// include testimonial functions
+include( "library/testimonial.php" );
+
+
 // include metabox
 include( "library/metabox.php" );
 
