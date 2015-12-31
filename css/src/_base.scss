@@ -125,6 +125,10 @@ hr {
 
 	img {
 		border: 4px solid white;
+
+		&.no-border {
+			border: 0;
+		}
 	}
 }
 
