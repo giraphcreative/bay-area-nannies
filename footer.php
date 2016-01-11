@@ -17,7 +17,7 @@
 
 <footer class="footer">
 	<div class="wrap">
-		<p>Bay Area Super Nanny	&#8480; &trade;. All Rights Reserved.<br>
+		<p>Bay Area Super Nanny	&#8480;, &trade;. All Rights Reserved.<br>
 			Loving, Nurturing Nannies, Mannies, Postpartum Doulas, Caregivers</p>
 		<p><a href="mailto:bayarea1nanny@yahoo.com">Bayarea1nanny@yahoo.com</a></p>
 		<p>
