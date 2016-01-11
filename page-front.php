@@ -40,7 +40,7 @@ get_header();
 					<li><a href="/2015/11/22/separation-strategies/"><img src="<?php bloginfo( 'template_url' ) ?>/img/home-separation.png"> Separation Strategies</a></li>
 					<li><a href="/2015/11/22/special-needs/"><img src="<?php bloginfo( 'template_url' ) ?>/img/home-needs.png"> Special Needs</a></li>
 					<li><a href="/2015/11/22/best-toys/"><img src="<?php bloginfo( 'template_url' ) ?>/img/home-toys.png"> Best Toys</a></li>
-					<li><a href="/baby-store/"><img src="<?php bloginfo( 'template_url' ) ?>/img/home-store.png"> Baby Store</a></li>
+					<!--<li><a href="/baby-store/"><img src="<?php bloginfo( 'template_url' ) ?>/img/home-store.png"> Baby Store</a></li>-->
 				</ul>
 			</div>
 		</div>
