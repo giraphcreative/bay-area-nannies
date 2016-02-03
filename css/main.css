@@ -161,9 +161,9 @@ hr {
   box-shadow: 4px 4px 10px #babbbd;
   border-radius: 10px; }
 
-.content-style img, .content-narrow img {
+.content-style img, .content-narrow img, .content-style iframe, .content-narrow iframe {
   border: 4px solid white; }
-  .content-style img.no-border, .content-narrow img.no-border {
+  .content-style img.no-border, .content-narrow img.no-border, .content-style iframe.no-border, .content-narrow iframe.no-border {
     border: 0; }
 
 h1, h2, h3, h4, h5, h6 {

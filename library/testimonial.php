@@ -23,6 +23,8 @@ function the_testimonials() {
 						?>
 						<img src="<?php print $testimonial["image"] ?>" alt="<?php print ( !empty( $test ) ? $test : '' ) ?>" class="testimonial-image">
 						<?php
+					} else {
+						print apply_filters('the_content', $testimonial["image"]);
 					}
 					?>
 					<div class="testimonial-content">
