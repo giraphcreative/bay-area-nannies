@@ -132,7 +132,7 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
     $testimonial_metabox->add_group_field( $testimonial_metabox_group, array(
-        'name' => 'Image',
+        'name' => 'Image/Video URL',
         'id'   => 'image',
         'type' => 'file',
         'preview_size' => array( 200, 100 )
