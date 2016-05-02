@@ -22,10 +22,11 @@
 		<p><a href="mailto:bayarea1nanny@yahoo.com">Bayarea1nanny@yahoo.com</a></p>
 		<p>
 			Follow Us:<br>
-			<a href="https://www.instagram.com/bayareasupernanny/"><img src="<?php bloginfo( "template_url" ) ?>/img/social-instagram.png"></a>
-			<a href="https://www.youtube.com/channel/UCHGXqUmow_vSFnlY4QF67xw/feed"><img src="<?php bloginfo( "template_url" ) ?>/img/social-youtube.png"></a>
+			<a href="https://www.instagram.com/forehead_kisses_nannies/"><img src="<?php bloginfo( "template_url" ) ?>/img/social-instagram.png"></a>
+			<!--<a href="https://www.youtube.com/channel/UCHGXqUmow_vSFnlY4QF67xw/feed"><img src="<?php bloginfo( "template_url" ) ?>/img/social-youtube.png"></a>-->
 			<a href="https://www.linkedin.com/in/cherrelle-williams-59561250"><img src="<?php bloginfo( "template_url" ) ?>/img/social-linkedin.png"></a>
 			<a href="https://m.facebook.com/profile.php?id=279802892099777&tsid=0.10620086104609072&source=typeahead"><img src="<?php bloginfo( "template_url" ) ?>/img/social-facebook.png"></a>
+			<a href="https://twitter.com/forehead_kisses"><img src="<?php bloginfo( "template_url" ) ?>/img/social-twitter.png"></a>
 		</p>
 	</div>
 </footer><!-- #colophon -->
